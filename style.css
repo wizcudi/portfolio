@@ -1,0 +1,248 @@
+
+
+
+
+html {
+    scroll-behavior: smooth;
+    /* background-color: whitesmoke; */
+}
+  
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+details {
+    cursor: pointer;
+}
+
+
+
+/* Header */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid 1px black;
+    top: 0;
+}
+.navigation-items{
+    display: flex;
+    justify-content: flex-end;
+    /* border: crimson solid 2px; */
+    padding: 0;
+}
+.nav-tabs{
+    /* margin-left: 8px;
+    margin-right: 2px; */
+    /* border: solid black 1px; */
+    list-style-type: none;
+}
+#logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    /* border: black solid 1px; */
+    width: 30%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* About Me */
+#about-me{
+    margin-top: 40px;
+}
+#aboutMeDiv{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: blue solid 2px; */
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+#aboutMeContent{
+    /* border: solid black 1px; */
+    font-size: 1.1em;
+    width: 315px;
+    /* height: 393px; */
+    margin: 5px;
+}
+#port-image{
+    margin: 5px;
+    width: 315px;
+    border-radius: 15% 15%;
+}
+#time-container{
+    font-style: italic;
+}
+
+/* Projects */
+#projects{
+    padding-left: 25px;
+    padding-right: 25px;
+    /* border: dashed black 2px; */
+    margin-top: 60px;
+    background-color: white;
+    /* height: 250px; */
+}
+.project{
+    /* border: steelblue solid 2px; */
+    border-bottom: solid black 1px;
+    margin-bottom: 1%;
+}
+.project-title h3 {
+    display: inline;
+}
+/* #projects h2{
+    border: teal solid 3px;
+} */
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+/* Skills */
+#skills{
+    margin-top: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* border: dashed brown 2px; */
+}
+#skills-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 10px;
+    /* border: solid pink 2px; */
+    padding-bottom: 25px;
+}
+.skill{
+    border-radius: 50%;
+    border: solid black 1px;
+    width: 120px;
+    height: 120px;
+}
+
+
+/* Contact Page */
+.contactMain{
+    margin: 10%;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: auto;
+}
+
+@media only screen and (min-width: 970px){
+    main{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    #skills-container{
+        display: grid;
+        grid-template-columns: repeat(6, 16%) ;
+        grid-template-rows: repeat(1, 100%);
+        grid-row-gap: 10px;
+        /* border: solid pink 2px; */
+    }
+}
+@media only screen and (min-width: 850px){
+    #logo, nav{
+        font-size: 1.4em;
+    }
+}
+@media only screen and (min-width: 620px) and (max-width: 849px){
+    #skills-container{
+        display: grid;
+        grid-template-columns: repeat(3, 33%) ;
+        grid-template-rows: repeat(2, 50%);
+        grid-row-gap: 10px;
+        /* border: solid pink 2px; */
+    }
+}
+@media only screen and (min-width: 710px){
+    #logo, nav{
+        font-size: 1.3em;
+    }
+    .nav-tabs{
+        margin-left: 15px;
+        margin-right: 6px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 709px) {
+    #aboutMeDiv{
+        flex-direction: column;
+    }
+    #aboutMeContent{
+        font-size: 1.2em;
+        width: 400px;
+    }
+    #logo, nav{
+        font-size: 1.2em;
+    }
+    .nav-tabs{
+        margin-left: 12px;
+        margin-right: 2px;
+    }
+    #port-image{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 479px){
+    #aboutMeDiv{
+        flex-direction: column;
+    }
+    #aboutMeContent{
+        width: 250px;
+        font-size: 1em;
+    }
+    #logo, nav{
+        font-size: 1em;
+    }
+    .nav-tabs{
+        margin-left: 8px;
+        margin-right: 2px;
+    }
+    #port-image{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 330px){
+    #skills-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 16%);
+        grid-row-gap: 10px;
+        /* border: solid pink 2px; */
+    }
+    nav{
+        font-size: .7em;
+    }
+    
+}
+@media only screen and (max-width: 275px){
+    #aboutMeDiv{
+        flex-direction: column;
+    }
+    #aboutMeContent{
+        font-size: .9em;
+        width: 200px;
+    }
+    #port-image{
+        width: 200px;
+    }
+}
