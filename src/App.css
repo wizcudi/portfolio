@@ -1,0 +1,17 @@
+:root {
+    --main: #ebe6e0;
+    --accent: #4c7766;
+    --accent2: #1034A6;
+
+    background-color: var(--main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

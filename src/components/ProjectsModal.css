@@ -1,0 +1,65 @@
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    
+}
+
+.project-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.815);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: whitesmoke;
+}
+
+.modal-close-btn {
+    padding: 13px ;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: var(--accent2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.623);
+}
+
+.projects-area {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+    border: solid 2px black;
+    background-color: var(--main);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.623);
+}
+.project h2 {
+    margin: 0;
+}
+.project p {
+    text-align: center;
+}
