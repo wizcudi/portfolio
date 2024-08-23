@@ -41,7 +41,7 @@
     cursor: pointer;
     border: solid 2px black;
     background-color: var(--accent);
-    
+    color: black;
 }
 .hero-email{
     text-align: center;
