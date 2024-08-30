@@ -6,6 +6,12 @@ export default function ProjectsModal({onClose}) {
 
     const projects = [
         {
+            name:'House Keeping',
+            description:'Mock Up Landing page for House Keepers',
+            link: 'https://housekeepingbiz.netlify.app/',
+            github:'',
+        },
+        {
             name:'Elephants Epoxy',
             description:'Mock Up Landing page for Epoxy Installer',
             link: 'https://wizcudi.github.io/epoxyLanding/',
