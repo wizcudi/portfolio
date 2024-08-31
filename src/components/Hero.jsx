@@ -11,34 +11,42 @@ export default function Hero() {
 
     return (
         <div className='hero'>
+
             <div className='hero-bio'>
-                <div className='hero-heading-img'>
+                <div className='hero-content'>
                     <div className='hero-heading-area'>
                         <h1 className='hero-h1'>Tony Saint-Amour</h1>
                         <h2 className='hero-h2'>React Web Developer</h2>
                     </div>
-                    <img className='hero-img sm-hero-img' src={myImage} alt='Tony Saint-Amour' /> 
-                </div>
-                <p>
-                    I absolutely love to create fun and interesting sites using the latest and greatest technology. 
-                </p>
-                
-                <div className='project-contact'>
-                    <button 
-                        onClick={() => setShowModal(true)} 
-                        className='hero-projects-btn'
-                    >
-                        Projects
-                    </button>
-                    {showModal && createPortal(
-                        <ProjectsModal onClose={() => setShowModal(false)} />,
-                        document.body
-                    )}
-                    <a className='hero-email' href="mailto:thankyouamour@gmail.com" >contact</a>
+
+                    <p className='hero-p'>
+                        I absolutely love to create fun and interesting sites using the latest and greatest technology. 
+                    </p>
+                    
+                    <div className='project-contact'>
+
+                        <button 
+                            onClick={() => setShowModal(true)} 
+                            className='hero-projects-btn'
+                        >
+                            Projects
+                        </button>
+
+                        {showModal && createPortal(
+                            <ProjectsModal onClose={() => setShowModal(false)} />,
+                            document.body
+                        )}
+
+                        <a className='hero-email' href="mailto:thankyouamour@gmail.com" >contact</a>
+                    
+                    </div>
                 </div>
             </div>
 
-            <img className='hero-img lg-hero-img' src={myImage} alt='Tony Saint-Amour' />
+            <div className='hero-img-div'>
+                <img className='hero-img' src={myImage} alt='Tony Saint-Amour' />
+            </div>
+
         </div>
     )
 }

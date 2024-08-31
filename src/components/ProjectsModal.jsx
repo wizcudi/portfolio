@@ -12,6 +12,12 @@ export default function ProjectsModal({onClose}) {
             github:'',
         },
         {
+            name: 'Pokemon Search',
+            description: 'Search up any Pokemon by name or ID number',
+            link: 'https://pokemon-thankyouamour.netlify.app/',
+            github:'',
+        },
+        {
             name:'Elephants Epoxy',
             description:'Mock Up Landing page for Epoxy Installer',
             link: 'https://wizcudi.github.io/epoxyLanding/',
@@ -35,12 +41,7 @@ export default function ProjectsModal({onClose}) {
             link: 'https://wizcudi.github.io/rpgGame/',
             github:'',
         },
-        {
-            name: 'Pokemon Search',
-            description: 'Search up any Pokemon by name or ID number',
-            link: 'https://wizcudi.github.io/PokeDex/',
-            github:'',
-        },
+        
         {
             name: "Shopping Cart",
             description: "Dessert shopping cart project, showcasing CRUD functionalites.",
@@ -77,6 +78,7 @@ export default function ProjectsModal({onClose}) {
     return (
         <div className='project-modal'>
             <button className='modal-close-btn' onClick={onClose}>Close</button>
+            <h1>My Projects</h1>
             <div className='projects-area'>
                 {projects.map(({name,link, description}) => (
                     <div className='project' key={name}>

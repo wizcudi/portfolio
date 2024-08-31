@@ -1,17 +1,28 @@
 :root {
-    --main: #ebe6e0;
-    --accent: #4c7766;
-    --accent2: #1034A6;
-
-    background-color: var(--main);
+    --main: #f8f9fa;
+    --text: #212529;
+    --accent: #6c757d;
+    --accent2: #007bff;
+    --white: #ffffff;
+}
+  
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--main);
+    color: var(--text);
+    line-height: 1.6;
+}
+  
 .main {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
+    padding: 2rem;
 }
