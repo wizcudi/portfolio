@@ -89,7 +89,9 @@
     .hero {
       flex-direction: row;
     }
-
+    .hero-bio {
+      padding: 1rem;
+    }
     .hero-h1 {
       font-size: 1.5rem;
     }
