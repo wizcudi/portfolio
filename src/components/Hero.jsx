@@ -20,7 +20,9 @@ export default function Hero() {
                     </div>
 
                     <p className='hero-p'>
-                        I absolutely love to create fun and interesting sites using the latest and greatest technology. 
+                        Bringing a orchestrator's mindset to web development. 
+                        My passion lies in creativity, blending design and 
+                        functionality.
                     </p>
                     
                     <div className='project-contact'>

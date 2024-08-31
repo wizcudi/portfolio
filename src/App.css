@@ -26,3 +26,9 @@ body {
     align-items: center;
     padding: 2rem;
 }
+
+@media (max-width:500px) {
+    .main {
+        padding: 1rem;
+    }
+}
