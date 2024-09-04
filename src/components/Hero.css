@@ -1,123 +1,161 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    background-color: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 900px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  row-gap: 40px;
+}
+.hero-bio {
+  display: flex;
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+  min-width: 312px;
+}
+.hero-h1 {
+  font-size: 2rem;
+  color: var(--text);
+}
+.hero-h2 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: normal;
+}
+.hero-p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+
+
+.project-contact {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+
+.hero-projects-btn, .hero-email {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero-projects-btn {
+  background-color: var(--accent2);
+  color: var(--white);
+}
+
+.hero-email {
+  background-color: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.hero-projects-btn:hover, .hero-email:hover {
+  transform: translateY(-2px);
+}
+
+.hero-img-div {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  min-width: 245px;
+}
+
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 620px) {
+
   .hero-bio {
-    padding: 2rem;
     text-align: center;
-  }
-  
-  .hero-heading-area {
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-h1 {
-    font-size: 2.5rem;
-    color: var(--text);
-    margin-bottom: 0.5rem;
-  }
-  
-  .hero-h2 {
-    font-size: 1.5rem;
-    color: var(--accent);
-    font-weight: normal;
-  }
-  
-  .hero-p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-  }
-  
-  .project-contact {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .hero-projects-btn, .hero-email {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .hero-projects-btn {
-    background-color: var(--accent2);
-    color: var(--white);
-  }
-  
-  .hero-email {
-    background-color: var(--accent);
-    color: var(--white);
-  }
-  
-  .hero-projects-btn:hover, .hero-email:hover {
-    transform: translateY(-2px);
-  }
-  
-  .hero-img-div {
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-  }
-  
-  .hero-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s;
-  }
-  
-  .hero-img:hover {
-    transform: scale(1.05);
-  }
-  
-@media (min-width: 768px) {
-    .hero {
-      flex-direction: row;
-    }
-    .hero-bio {
-      padding: 1rem;
-    }
+    padding: 40px 20px;
     
-  
-    .hero-bio {
-      flex: 1;
-      text-align: left;
-    }
-  
-    .hero-img-div {
-      flex: 1;
-      max-height: none;
-    }
-  
-    .project-contact {
-      justify-content: flex-start;
-    }
+
+  }
+  .project-contact {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .hero-img {
+    max-height: 600px;
+  }
 }
 @media (max-width: 500px) {
+  
   .hero-h1 {
     font-size: 2rem;
   }
-  
+
   .hero-h2 {
     font-size: 1.5rem;
   }
-  
+
   .hero-p {
     font-size: 1rem;
+  }
+
+  
+  .hero-img {
+    max-height: 480px;
+  }
+
+}
+@media (max-width: 400px) {
+  .hero-bio {
+    min-width: auto;
+  }
+}
+@media (max-width: 386px) {
+  .hero-h1 {
+    font-size: 30px;
+  }
+
+  .hero-h2 {
+    font-size: 25px;
+  }
+
+  .hero-p {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 330px) {
+  
+  .hero-h1 {
+    font-size: 25px;
+  }
+
+  .hero-h2 {
+    font-size: 20px;
+  }
+
+  .hero-p {
+    font-size: 14px;
   }
 }

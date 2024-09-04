@@ -12,6 +12,12 @@ export default function ProjectsModal({onClose}) {
             github:'',
         },
         {
+            name:'Workout App',
+            description:'Creating workouts but still in process',
+            link: 'https://tya-workout.netlify.app/',
+            github:'',
+        },
+        {
             name: 'Pokemon Search',
             description: 'Search up any Pokemon by name or ID number',
             link: 'https://pokemon-thankyouamour.netlify.app/',

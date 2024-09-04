@@ -13,7 +13,7 @@ export default function Hero() {
         <div className='hero'>
 
             <div className='hero-bio'>
-                <div className='hero-content'>
+                <div className='hero-bio-content'>
                     <div className='hero-heading-area'>
                         <h1 className='hero-h1'>Tony Saint-Amour</h1>
                         <h2 className='hero-h2'>React Web Developer</h2>
