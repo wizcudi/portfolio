@@ -6,6 +6,12 @@ export default function ProjectsModal({onClose}) {
 
     const projects = [
         {
+            name:'Templates',
+            description:'Custom component templates',
+            link: 'https://tya-template.netlify.app/',
+            github:'',
+        },
+        {
             name:'Indie Discovery',
             description:'Indie artist directory, discover you new favorite artists',
             link: 'https://indie-discovery.netlify.app/',
