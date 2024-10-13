@@ -1,5 +1,4 @@
 import React from 'react'
-import './ProjectsModal.css'
 
 
 export default function ProjectsModal({onClose}) {
@@ -94,15 +93,108 @@ export default function ProjectsModal({onClose}) {
     ];
 
     return (
-        <div className='project-modal'>
-            <button className='modal-close-btn' onClick={onClose}>Close</button>
-            <h1>My Projects</h1>
-            <div className='projects-area'>
+        <div className='
+            flex 
+            flex-col
+            fixed 
+            top-1/2 
+            left-1/2 
+            transform -translate-x-1/2 -translate-y-1/2 
+            bg-white 
+            p-8 
+            rounded-lg 
+            shadow-lg 
+            max-h-[80vh] 
+            overflow-y-auto 
+            w-4/5
+            max-w-xl 
+            gap-8
+        '>
+            <button 
+                className='
+                    self-end 
+                    px-4 
+                    py-2 
+                    
+                    font-semibold
+                    rounded 
+
+                    bg-blue-600 
+                    hover:bg-blue-800
+                    text-white 
+
+                    cursor-pointer 
+                     
+                    
+                ' 
+                onClick={onClose}
+            >Close</button>
+
+            <h1 
+                className='
+                    text-3xl
+                    font-bold
+                    pb-2
+                    border-b-2 border-blue-600
+                '
+            >My Projects</h1>
+            
+            <div 
+                className='
+                    flex
+                    flex-col 
+                    gap-6
+                '
+            >
                 {projects.map(({name,link, description}) => (
-                    <div className='project' key={name}>
-                        <h2>{name}</h2>
-                        <p>{description}</p>
-                        <a href={link}>View Project</a>
+                    <div 
+                        className='
+                            flex 
+                            flex-col 
+                            gap-2
+                            
+                            rounded-lg 
+                            p-6 
+
+                            border-2 
+                            border-blue-600
+
+                            cursor-pointer
+
+                            shadow-md
+                        ' 
+                        key={name}
+                    >
+                        <h2
+                            className='
+                                text-2xl
+                                font-bold
+                            '
+                        >{name}</h2>
+                        <p
+                            className='
+                                text-lg
+                            '
+                        >{description}</p>
+                        <a 
+                            href={link}
+                            className='
+                                border-2
+                                border-blue-600
+                                rounded
+                                px-4
+                                py-2
+                                mt-2
+                                max-w-64
+
+                                font-semibold
+                                text-blue-600
+                                text-center
+                                text-lg
+                                hover:text-white
+                                hover:bg-blue-600
+                            '
+                        >View Project</a>
                     </div>
                 ))}
             </div>

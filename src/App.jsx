@@ -1,11 +1,19 @@
 
 import Hero from './components/Hero.jsx'
-import './App.css'
 
 function App() {
 
   return (
-    <main className='main'>
+    <main className='
+      flex
+      
+      items-center
+      justify-center
+
+      min-h-screen
+      px-5
+      bg-stone-100
+    '>
       <Hero />
     </main>
   )
