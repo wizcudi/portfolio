@@ -11,15 +11,21 @@ export default function ProjectsModal({onClose}) {
             github:'',
         },
         {
-            name:'Indie Discovery',
-            description:'Indie artist directory, discover you new favorite artists',
-            link: 'https://indie-discovery.netlify.app/',
-            github:'',
-        },
-        {
             name:'House Keeping',
             description:'Mock Up Landing page for House Keepers',
             link: 'https://housekeepingbiz.netlify.app/',
+            github:'',
+        },
+        {
+            name:'Elephants Epoxy',
+            description:'Mock Up Landing page for Epoxy Installer',
+            link: 'https://wizcudi.github.io/epoxyLanding/',
+            github:'',
+        },
+        {
+            name:'Cezars Palace',
+            description:'Landing page created for Orlando Epoxy Installer',
+            link: 'https://wizcudi.github.io/cezar/',
             github:'',
         },
         {
@@ -35,17 +41,20 @@ export default function ProjectsModal({onClose}) {
             github:'',
         },
         {
-            name:'Elephants Epoxy',
-            description:'Mock Up Landing page for Epoxy Installer',
-            link: 'https://wizcudi.github.io/epoxyLanding/',
+            name: 'Music Player',
+            description: 'Allows users to play, pause, skip, and delete preloaded songs in playlist.',
+            link: 'https://wizcudi.github.io/musicPlayer/',
             github:'',
         },
         {
-            name:'Cezars Palace',
-            description:'Landing page created for Orlando Epoxy Installer',
-            link: 'https://wizcudi.github.io/cezar/',
+            name:'Indie Discovery',
+            description:'Indie artist directory, discover you new favorite artists',
+            link: 'https://indie-discovery.netlify.app/',
             github:'',
         },
+        
+        
+        
         {
             name: 'Calorie Counter',
             description: 'Allows users to add food eaten and workouts to track there daily calories burned.',
@@ -77,19 +86,6 @@ export default function ProjectsModal({onClose}) {
             link: "https://wizcudi.github.io/ToDoList/",
             github:'',
         },
-        {
-            name: 'Music Player',
-            description: 'Allows users to play, pause, skip, and delete preloaded songs in playlist.',
-            link: 'https://wizcudi.github.io/musicPlayer/',
-            github:'',
-        },
-        {
-            name: 'Platformer Game',
-            description: 'Mario Bros type of game with 2 check points. Best played on desktop.',
-            link: 'https://wizcudi.github.io/PlatformerGame/',
-            github:'',
-        },
-        
     ];
 
     return (
