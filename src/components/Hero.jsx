@@ -11,13 +11,16 @@ export default function Hero() {
     return (
         <div className='
             flex 
-            flex-col
-            pb-8
-            gap-4
-
+            flex-row
+            w-seven-100:flex-col
+           
+            gap-y-12
+            gap-x-12
             md:max-w-5xl
 
             sm:flex-row
+            
+            py-10
             
             
         '>
@@ -25,82 +28,64 @@ export default function Hero() {
             <div className='
                 flex
                 flex-col
-                gap-4
-                
-                py-6
-                
-                sm:w-2/3
-
+                text-brand-color-30-percent
+                gap-y-4
             '>
-                <div className='
-                    flex
-                    flex-col
-                    
+                <div
+                    className='
+                        flex
+                        flex-col
+                        gap-3
 
-                    text-center
-                    sm:text-start
-                '>
-                    <h1 className='
-                            font-bold
-                            text-4xl
-                            
-                            md:text-5xl
-                            lg:text-6xl
-                    '>Tony Saint-Amour</h1>
-                    <h2 className='
-                            font-bold
+                        max-w-sm    
+                    '
+                >
+                    <div className='
+                        flex
+                        flex-col
+                        
+                    '>
+                        <h1 className='
                             text-3xl
-                            
-                            md:text-4xl
-                            lg:text-5xl
-                    '>React Web Developer</h2>
+                            font-bold
+                        '>Tony Saint-Amour</h1>
+                        <h2 className='
+                            text-3xl
+                            font-semibold
+                        '>Web Creator</h2>
+                    </div>
+
+                    <p className='
+                        text-xl
+                        
+                    '>
+                        Creating out of curiosity, to learn and grow. 
+                        To build functional designs that solve problems.
+                    </p>
                 </div>
 
-                <p className='
-                    text-xl
-                    text-center
-
-                    md:text-2xl
-
-                    sm:text-start
-                '>
-                    Bringing a orchestrator's mindset to web development. 
-                    My passion lies in creativity, blending design and 
-                    functionality.
-                </p>
-                    
                 <div className='
                     flex
                     flex-col
-                    gap-2
-
-                    mx-auto
-
-                    md:mx-0
                     
-                    max-w-md
+                    gap-2
                     w-full
-                    px-8
-                    mt-2
-                    sm:px-0
-
+                    
+                    
                 '>
 
                     <button 
                             onClick={() => setShowModal(true)} 
                             className='
-                                border-2
-                                border-black
-                                text-lg
-                                px-2
-                                py-1
-                                rounded
+                                bg-brand-color-30-percent
+                                hover:bg-brand-color-30-percent/90
+                                text-brand-color-accent-3
+                                text-base
+                                font-semibold
                                 capitalize
-                                font-bold
-
-                                hover:bg-black 
-                                hover:text-white
-
+                                px-4
+                                py-2.5
+                                rounded-md  
                             '
                         >
                             Projects
@@ -113,30 +98,29 @@ export default function Hero() {
 
                     <a 
                         className='
-                            flex
-                            justify-center
-                            border-2 
-                            border-black
-                            text-lg
-                            px-2
-                            py-1
-                            rounded
+                            bg-brand-color-30-percent
+                            hover:bg-brand-color-30-percent/90
+                            text-brand-color-accent-3
+                            text-base
+                            font-semibold
                             capitalize
-                            font-bold
-                            hover:bg-black 
-                            hover:text-white
+                            px-4
+                            py-2.5
+                            rounded-md
+                            text-center
                         ' 
                         href="mailto:thankyouamour@gmail.com" 
                     >contact</a>
                     
                 </div>
+
             </div>
 
             <div className='
                 flex
                 justify-center
                 
-                sm:w-1/2
+                
             '>
                 <img 
                     className='

@@ -89,39 +89,48 @@ export default function ProjectsModal({onClose}) {
     ];
 
     return (
-        <div className='
-            flex 
-            flex-col
-            fixed 
-            top-1/2 
-            left-1/2 
-            transform -translate-x-1/2 -translate-y-1/2 
-            bg-white 
-            p-8 
-            rounded-lg 
-            shadow-lg 
-            max-h-[80vh] 
-            overflow-y-auto 
-            w-4/5
-            max-w-xl 
-            gap-8
-        '>
+        <div 
+            className='
+                fixed 
+                top-1/2 
+                left-1/2 
+                transform 
+                -translate-x-1/2 
+                -translate-y-1/2 
+                
+                flex 
+                flex-col
+
+                bg-brand-color-60-percent
+                border-2 
+                border-brand-color-30-percent
+                text-brand-color-20-percent
+                p-8 
+                gap-8
+
+                rounded-md
+                shadow-lg 
+                max-h-[90vh] 
+                w-[90%]
+                max-w-xl 
+
+                overflow-y-auto 
+            '
+        >
             <button 
                 className='
+                    
                     self-end 
                     px-4 
                     py-2 
-                    
+                    bg-brand-color-accent-1
+                    text-brand-color-30-percent
+                    text-lg
+                    border-2
+                    border-brand-color-30-percent
+                    rounded-md
                     font-semibold
-                    rounded 
-
-                    bg-blue-600 
-                    hover:bg-blue-800
-                    text-white 
-
-                    cursor-pointer 
-                     
-                    
+                    cursor-pointer
                 ' 
                 onClick={onClose}
             >Close</button>
@@ -131,7 +140,8 @@ export default function ProjectsModal({onClose}) {
                     text-3xl
                     font-bold
                     pb-2
-                    border-b-2 border-blue-600
+                    border-b-2 
+                    border-brand-color-30-percent
                 '
             >My Projects</h1>
             
@@ -140,6 +150,7 @@ export default function ProjectsModal({onClose}) {
                     flex
                     flex-col 
                     gap-6
+
                 '
             >
                 {projects.map(({name,link, description}) => (
@@ -152,8 +163,11 @@ export default function ProjectsModal({onClose}) {
                             rounded-lg 
                             p-6 
 
-                            border-2 
-                            border-blue-600
+                            bg-brand-color-60-percent
+                            border-2
+                            border-brand-color-30-percent
+                            
+                            text-brand-color-30-percent
 
                             cursor-pointer
 
@@ -175,8 +189,6 @@ export default function ProjectsModal({onClose}) {
                         <a 
                             href={link}
                             className='
-                                border-2
-                                border-blue-600
                                 rounded
                                 px-4
                                 py-2
@@ -184,11 +196,16 @@ export default function ProjectsModal({onClose}) {
                                 max-w-64
 
                                 font-semibold
-                                text-blue-600
                                 text-center
                                 text-lg
-                                hover:text-white
-                                hover:bg-blue-600
+                                text-brand-color-60-percent
+                                border-2
+
+                                border-brand-color-30-percent
+                                bg-brand-color-30-percent
+
+                                hover:text-brand-color-30-percent
+                                hover:bg-brand-color-60-percent
                             '
                         >View Project</a>
                     </div>

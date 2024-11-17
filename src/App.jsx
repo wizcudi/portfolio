@@ -11,8 +11,9 @@ function App() {
       justify-center
 
       min-h-screen
-      px-5
-      bg-stone-100
+      px-10
+      
+      bg-brand-color-60-percent
     '>
       <Hero />
     </main>
