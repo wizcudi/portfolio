@@ -5,38 +5,38 @@ export default function ProjectsModal({onClose}) {
 
     const projects = [
         {
-            name:'Templates',
-            description:'Custom component templates',
+            name:'Web Templates',
+            description:'Website Template Design',
             link: 'https://tya-template.netlify.app/',
             github:'',
         },
         {
             name:'House Keeping',
-            description:'Mock Up Landing page for House Keepers',
+            description:'House Keeping Landing Page',
             link: 'https://housekeepingbiz.netlify.app/',
             github:'',
         },
         {
             name:'Elephants Epoxy',
-            description:'Mock Up Landing page for Epoxy Installer',
+            description:'Epoxy Installer Landing Page',
             link: 'https://wizcudi.github.io/epoxyLanding/',
             github:'',
         },
         {
             name:'Cezars Palace',
-            description:'Landing page created for Orlando Epoxy Installer',
+            description:'Epoxy Installer Landing Page',
             link: 'https://wizcudi.github.io/cezar/',
             github:'',
         },
         {
             name:'Workout App',
-            description:'Creating workouts and save them on cloud',
+            description:'Workout App',
             link: 'https://tya-workout.netlify.app/',
             github:'',
         },
         {
             name: 'Pokemon Search',
-            description: 'Search up any Pokemon by name or ID number',
+            description: 'Search up any Pokemon',
             link: 'https://pokemon-thankyouamour.netlify.app/',
             github:'',
         },
@@ -125,6 +125,8 @@ export default function ProjectsModal({onClose}) {
                     py-2 
                     bg-brand-color-accent-1
                     text-brand-color-30-percent
+                    hover:text-brand-color-60-percent
+                    hover:bg-brand-color-accent-1/50
                     text-lg
                     border-2
                     border-brand-color-30-percent
