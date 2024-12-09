@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import myImage from '../assets/TonyStool.JPG';
 import ProjectsModal from './ProjectsModal.jsx';
+import Button from './Button.jsx';
+import Anchor from './Anchor.jsx';
 
 export default function Hero() {
 
@@ -73,45 +75,27 @@ export default function Hero() {
                     
                     
                 '>
+                    <Button 
+                        onClick={() => setShowModal(true)} 
+                        text='Projects' 
 
-                    <button 
-                            onClick={() => setShowModal(true)} 
-                            className='
-                                bg-brand-color-30-percent
-                                hover:bg-brand-color-30-percent/90
-                                text-brand-color-accent-3
-                                text-base
-                                font-semibold
-                                capitalize
-                                px-4
-                                py-2.5
-                                rounded-md  
-                            '
-                        >
-                            Projects
-                    </button>
+                        
+                    />
 
                     {showModal && createPortal(
-                            <ProjectsModal onClose={() => setShowModal(false)} />,
-                            document.body
+                        <ProjectsModal onClose={() => setShowModal(false)} />,
+                        document.body
                     )}
 
-                    <a 
-                        className='
-                            bg-brand-color-30-percent
-                            hover:bg-brand-color-30-percent/90
-                            text-brand-color-accent-3
-                            text-base
-                            font-semibold
-                            capitalize
-                            px-4
-                            py-2.5
-                            rounded-md
-                            text-center
-                        ' 
-                        href="mailto:thankyouamour@gmail.com" 
-                    >contact</a>
-                    
+                    <Anchor 
+                        onClick={"mailto:thankyouamour@gmail.com"}
+                        text='contact' 
+
+                        bg='bg-brand-color-30-percent'
+                        font='text-brand-color-accent-2 font-bold text-lg'
+                        hover='hover:bg-brand-color-accent-1 hover:text-brand-color-30-percent hover:border hover:border-brand-color-30-percent'
+                        active='hover:bg-brand-color-accent-1 hover:text-brand-color-30-percent hover:border hover:border-brand-color-30-percent'
+                    />
                 </div>
 
             </div>

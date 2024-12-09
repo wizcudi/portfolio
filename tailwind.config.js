@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {        
-        'brand-color-60-percent':"#D3D4D9",
-        'brand-color-30-percent':"#252627",
+        'brand-color-60-percent':"#e5e5e5",
+        'brand-color-30-percent':"#14213d",
 
-        'brand-color-accent-1':"#4B88A2",
-        'brand-color-accent-2':"#BB0A21",
-        'brand-color-accent-3':"#FFF9FB",
+        'brand-color-accent-1':"#fca311",
+        'brand-color-accent-2':"#ffffff",
+        'brand-color-accent-3':"#000000",
       },
       screens: {
         'w-one-1000': {'max': '1000px'},
