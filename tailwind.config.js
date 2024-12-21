@@ -6,13 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {        
-        'brand-color-60-percent':"#e5e5e5",
-        'brand-color-30-percent':"#14213d",
+      colors: { 
+        'color60':"#fcf8f5",
+        'color30':"#3f2440",
 
-        'brand-color-accent-1':"#fca311",
-        'brand-color-accent-2':"#ffffff",
-        'brand-color-accent-3':"#000000",
+        'color10a':"#ff875c",
+        'color10b':"#ffffff",
+        'color10c':"#000000",
       },
       screens: {
         'w-one-1000': {'max': '1000px'},

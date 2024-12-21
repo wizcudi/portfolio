@@ -1,21 +1,13 @@
 
-import Hero from './components/Hero.jsx'
+import Home from './components/Home.jsx'
+
 
 function App() {
 
   return (
-    <main className='
-      flex
+    <main className='bg-color60'>
+      <Home />
       
-      items-center
-      justify-center
-
-      min-h-screen
-      px-10
-      
-      bg-brand-color-60-percent
-    '>
-      <Hero />
     </main>
   )
 }
