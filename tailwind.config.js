@@ -28,16 +28,6 @@ export default {
       }
     },
 
-
-    // extend: {
-    //   screens: {
-    //     'xs': '400px',
-    //     // You can also use max-width queries
-    //     'max-xs': {'max': '400px'}
-    //   }
-
-      
-    // },
   },
   plugins: [],
 }
